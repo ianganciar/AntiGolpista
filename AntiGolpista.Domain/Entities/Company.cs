@@ -14,9 +14,8 @@ public class Company : BaseEntity
     public int UserId { get; private set; }
     public User? User { get; private set; }
     public List<TrustedPhoneNumber> TrustedPhonesNumbers { get; private set; } = [];
-    public List<SuspiciousPhoneNumber> SuspiciousPhoneNumbers { get; private set; } = [];
-    public List<FraudulentPhoneNumber> FraudulentPhoneNumbers { get; private set; } = [];
-
+    public List<UntrustedPhoneNumber> UntrustedPhoneNumbers { get; private set; } = [];
+   
     public Company(
         Name name,
         PhoneNumber supportPhoneNumber,
