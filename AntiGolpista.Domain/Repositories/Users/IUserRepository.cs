@@ -1,7 +1,7 @@
-﻿using AntiGolpista.Domain.Entities;
+﻿using AntiGolpista.Domain.Entities.Users;
 using AntiGolpista.Domain.ValueObjects;
 
-namespace AntiGolpista.Domain.Repositories;
+namespace AntiGolpista.Domain.Repositories.Users;
 public interface IUserRepository
 {
     Task<User?> GetByIdAsync(int id);

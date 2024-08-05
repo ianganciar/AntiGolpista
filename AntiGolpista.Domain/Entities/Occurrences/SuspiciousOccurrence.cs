@@ -1,4 +1,6 @@
-﻿namespace AntiGolpista.Domain.Entities;
+﻿using AntiGolpista.Domain.Entities.PhonesNumbers;
+
+namespace AntiGolpista.Domain.Entities.Occurrences;
 
 public class SuspiciousOccurrence : BaseEntity
 {

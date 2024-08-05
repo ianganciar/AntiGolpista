@@ -1,5 +1,4 @@
-﻿using AntiGolpista.Domain.Enums;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace AntiGolpista.Domain.ValueObjects;
 public class Document
@@ -62,4 +61,10 @@ public class Document
     {
         return Value.GetHashCode(StringComparison.Ordinal);
     }
+}
+
+public enum DocumentType
+{
+    CNPJ,
+    CPF
 }

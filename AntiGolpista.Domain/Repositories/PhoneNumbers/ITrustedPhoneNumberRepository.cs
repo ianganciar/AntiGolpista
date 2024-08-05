@@ -1,6 +1,6 @@
-﻿using AntiGolpista.Domain.Entities;
+﻿using AntiGolpista.Domain.Entities.PhonesNumbers;
 
-namespace AntiGolpista.Domain.Repositories;
+namespace AntiGolpista.Domain.Repositories.PhoneNumbers;
 public interface ITrustedPhoneNumberRepository
 {
     Task<TrustedPhoneNumber> GetByIdAsync(int id);

@@ -1,7 +1,9 @@
-﻿using AntiGolpista.Domain.Security.Cryptography;
+﻿using AntiGolpista.Domain.Entities.PhonesNumbers;
+using AntiGolpista.Domain.Entities.Users;
+using AntiGolpista.Domain.Security.Cryptography;
 using AntiGolpista.Domain.ValueObjects;
 
-namespace AntiGolpista.Domain.Entities;
+namespace AntiGolpista.Domain.Entities.Companies;
 public class Company : BaseEntity
 {
     public Name Name { get; private set; }

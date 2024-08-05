@@ -1,6 +1,8 @@
-﻿using AntiGolpista.Domain.ValueObjects;
+﻿using AntiGolpista.Domain.Entities.Companies;
+using AntiGolpista.Domain.Entities.Occurrences;
+using AntiGolpista.Domain.ValueObjects;
 
-namespace AntiGolpista.Domain.Entities;
+namespace AntiGolpista.Domain.Entities.PhonesNumbers;
 public class UntrustedPhoneNumber(PhoneNumber phoneNumber)
 {
     public PhoneNumber PhoneNumber { get; private set; } = phoneNumber;

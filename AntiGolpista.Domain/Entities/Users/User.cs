@@ -1,8 +1,9 @@
-﻿using AntiGolpista.Domain.Enums;
+﻿using AntiGolpista.Domain.Entities.Companies;
+using AntiGolpista.Domain.Entities.Users.Enums;
 using AntiGolpista.Domain.Security.Cryptography;
 using AntiGolpista.Domain.ValueObjects;
 
-namespace AntiGolpista.Domain.Entities;
+namespace AntiGolpista.Domain.Entities.Users;
 public class User : BaseEntity
 {
     public Name Name { get; private set; }
