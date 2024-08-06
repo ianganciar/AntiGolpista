@@ -1,7 +1,7 @@
 ﻿using AntiGolpista.Domain.Entities.Companies;
 using AntiGolpista.Domain.Entities.Occurrences;
 
-namespace AntiGolpista.Domain.Entities.PhonesNumbers;
+namespace AntiGolpista.Domain.Entities.PhoneNumbers;
 public class TrustedPhoneNumber(string phoneNumber)
 {
     public string PhoneNumber { get; private set; } = phoneNumber;

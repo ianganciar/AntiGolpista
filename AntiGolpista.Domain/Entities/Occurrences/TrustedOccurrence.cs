@@ -1,4 +1,4 @@
-﻿using AntiGolpista.Domain.Entities.PhonesNumbers;
+﻿using AntiGolpista.Domain.Entities.PhoneNumbers;
 
 namespace AntiGolpista.Domain.Entities.Occurrences;
 public class TrustedOccurrence : BaseEntity

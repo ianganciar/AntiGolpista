@@ -1,4 +1,4 @@
-﻿using AntiGolpista.Domain.Entities.PhonesNumbers;
+﻿using AntiGolpista.Domain.Entities.PhoneNumbers;
 using AntiGolpista.Domain.Entities.Users;
 using AntiGolpista.Domain.Security.Cryptography;
 using AntiGolpista.Domain.ValueObjects;
@@ -24,8 +24,8 @@ public class Company : BaseEntity
         Document document,
         Uri documentImageUrl,
         Uri profileImageUrl,
-        Uri bannerImageUrl,
-        IPasswordEncripter passwordEncripter)
+        Uri bannerImageUrl
+        )
     {
         Name = name;
         SupportPhoneNumber = supportPhoneNumber;
