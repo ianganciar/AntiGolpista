@@ -2,6 +2,7 @@
 using AntiGolpista.Domain.Entities.Users.Enums;
 using AntiGolpista.Domain.Security.Cryptography;
 using AntiGolpista.Domain.ValueObjects;
+using System.Xml.Linq;
 
 namespace AntiGolpista.Domain.Entities.Users;
 public class User : BaseEntity
@@ -15,6 +16,14 @@ public class User : BaseEntity
 
     private readonly IPasswordEncripter _passwordEncripter;
 
+    private User()
+    {
+        Name = null!;
+        Email = null!;
+        PasswordHash = null!;
+        PhoneNumber = null!;
+        _passwordEncripter = null!;
+    }
     public User(
         Name name,
         Email email,

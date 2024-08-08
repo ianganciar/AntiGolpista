@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace AntiGolpista.Domain.ValueObjects;
 public class Name
 {
-    private static readonly string NameRegexPattern = @"^[a-zA-Z0-9\s]+$";
+    private static readonly string NameRegexPattern = @"^[a-zA-Z0-9\s]{1,100}$";
     private static readonly Regex NameRegex = new Regex(NameRegexPattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
     public Name(string value)
@@ -22,7 +17,7 @@ public class Name
 
         if (!IsValid(value))
         {
-            throw new ArgumentException("Invalid name format. It can contain letters, numbers, and spaces only.", nameof(value));
+            throw new ArgumentException("Invalid name format. It can contain letters, numbers, and spaces only, and must be between 1 and 100 characters long.", nameof(value));
         }
 
         Value = value;

@@ -3,9 +3,19 @@ using AntiGolpista.Domain.Entities.Occurrences;
 using AntiGolpista.Domain.ValueObjects;
 
 namespace AntiGolpista.Domain.Entities.PhoneNumbers;
-public class UntrustedPhoneNumber(PhoneNumber phoneNumber)
+public class UntrustedPhoneNumber : BaseEntity
 {
-    public PhoneNumber PhoneNumber { get; private set; } = phoneNumber;
+    public UntrustedPhoneNumber(PhoneNumber phoneNumber)
+    {
+        PhoneNumber = phoneNumber;
+    }
+
+    private UntrustedPhoneNumber()
+    {
+        PhoneNumber = null!;
+    }
+
+    public PhoneNumber PhoneNumber { get; private set; }
     public List<FraudulentOccurrence> FraudulentOcurrences { get; private set; } = [];
     public List<SuspiciousOccurrence> SuspiciousOcurrences { get; private set; } = [];
     public int CompanyId { get; private set; }

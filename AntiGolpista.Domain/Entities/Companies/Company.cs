@@ -1,6 +1,5 @@
 ﻿using AntiGolpista.Domain.Entities.PhoneNumbers;
 using AntiGolpista.Domain.Entities.Users;
-using AntiGolpista.Domain.Security.Cryptography;
 using AntiGolpista.Domain.ValueObjects;
 
 namespace AntiGolpista.Domain.Entities.Companies;
@@ -18,6 +17,15 @@ public class Company : BaseEntity
     public List<TrustedPhoneNumber> TrustedPhonesNumbers { get; private set; } = [];
     public List<UntrustedPhoneNumber> UntrustedPhoneNumbers { get; private set; } = [];
 
+    private Company()
+    {
+        Name = null!;
+        SupportPhoneNumber = null!;
+        Document = null!;
+        DocumentImageUrl = null!;
+        ProfileImageUrl = null!;
+        BannerImageUrl = null!;
+    }
     public Company(
         Name name,
         PhoneNumber supportPhoneNumber,
