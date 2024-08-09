@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AntiGolpista.Infrastructure.Migrations
 {
     [DbContext(typeof(AntiGolpistaDbContext))]
-    [Migration("20240808015125_First")]
-    partial class First
+    [Migration("20240809001508_first")]
+    partial class first
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
