@@ -2,10 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AntiGolpista.Infrastructure.Persistence.Configurations;
-public class SuspiciousOccurrenceConfigurations : IEntityTypeConfiguration<SuspiciousOccurrence>
+namespace AntiGolpista.Infrastructure.Data.Configurations;
+public class TrustedOccurrencesConfigurations : IEntityTypeConfiguration<TrustedOccurrence>
 {
-    public void Configure(EntityTypeBuilder<SuspiciousOccurrence> builder)
+    public void Configure(EntityTypeBuilder<TrustedOccurrence> builder)
     {
         builder.HasKey(to => to.Id);
 

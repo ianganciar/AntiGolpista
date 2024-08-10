@@ -1,6 +1,6 @@
 using AntiGolpista.Blazor.Components.Account.Pages;
 using AntiGolpista.Blazor.Components.Account.Pages.Manage;
-using AntiGolpista.Blazor.Data;
+using AntiGolpista.Domain.Entities.Users;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Http.Extensions;

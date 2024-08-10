@@ -1,6 +1,6 @@
 ﻿using AntiGolpista.Domain.Entities.PhoneNumbers;
-using AntiGolpista.Domain.Entities.Users;
 using AntiGolpista.Domain.ValueObjects;
+using AntiGolpista.Domain.Entities.Users;
 
 namespace AntiGolpista.Domain.Entities.Companies;
 public class Company : BaseEntity
@@ -12,8 +12,8 @@ public class Company : BaseEntity
     public Uri ProfileImageUrl { get; private set; }
     public Uri BannerImageUrl { get; private set; }
     public bool IsVerified { get; private set; } = false;
-    public int UserId { get; private set; }
-    public User? User { get; private set; }
+    public string UserId { get; private set; }
+    public ApplicationUser? User { get; private set; }
     public List<TrustedPhoneNumber> TrustedPhonesNumbers { get; private set; } = [];
     public List<UntrustedPhoneNumber> UntrustedPhoneNumbers { get; private set; } = [];
 

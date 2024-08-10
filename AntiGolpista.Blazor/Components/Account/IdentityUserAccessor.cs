@@ -1,4 +1,4 @@
-using AntiGolpista.Blazor.Data;
+using AntiGolpista.Domain.Entities.Users;
 using Microsoft.AspNetCore.Identity;
 
 namespace AntiGolpista.Blazor.Components.Account;

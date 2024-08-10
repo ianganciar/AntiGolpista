@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AntiGolpista.Infrastructure.Persistence.Configurations;
+namespace AntiGolpista.Infrastructure.Data.Configurations;
 public class FraudulentOccurrenceConfigurations : IEntityTypeConfiguration<FraudulentOccurrence>
 {
     public void Configure(EntityTypeBuilder<FraudulentOccurrence> builder)

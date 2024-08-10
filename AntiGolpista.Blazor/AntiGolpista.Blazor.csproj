@@ -1,24 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
-		<Nullable>enable</Nullable>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<UserSecretsId>aspnet-AntiGolpista.Blazor-2170e036-2def-45a5-86aa-d9eb275cc811</UserSecretsId>
-	</PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-AntiGolpista.Blazor-f4dd9bab-6d26-4cbf-bb52-13d20dce2b80</UserSecretsId>
+  </PropertyGroup>
 
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.*" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.*" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.*" />
+    <PackageReference Include="MudBlazor" Version="7.*" />
+    <PackageReference Include="Extensions.MudBlazor.StaticInput" Version="2.*" />
+  </ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.*" />
-		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.*" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.*" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.*" />
-		<PackageReference Include="MudBlazor" Version="7.*" />
-		<PackageReference Include="Extensions.MudBlazor.StaticInput" Version="2.*" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\AntiGolpista.Domain\AntiGolpista.Domain.csproj" />
 		<ProjectReference Include="..\AntiGolpista.Infrastructure\AntiGolpista.Infrastructure.csproj" />
 	</ItemGroup>
 

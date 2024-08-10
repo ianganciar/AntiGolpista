@@ -1,11 +1,11 @@
 using AntiGolpista.Blazor.Components;
 using AntiGolpista.Blazor.Components.Account;
-using AntiGolpista.Blazor.Data;
+using AntiGolpista.Domain.Entities.Users;
+using AntiGolpista.Infrastructure.Data;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MudBlazor.Services;
-using AntiGolpista.Infrastructure;
 
 namespace AntiGolpista.Blazor;
 public class Program
@@ -13,8 +13,6 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-
-        builder.Services.AddInfrastructure(builder.Configuration);
 
         // Add MudBlazor services
         builder.Services.AddMudServices();

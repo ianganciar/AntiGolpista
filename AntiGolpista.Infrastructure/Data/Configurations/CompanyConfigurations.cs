@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AntiGolpista.Infrastructure.Persistence.Configurations;
+namespace AntiGolpista.Infrastructure.Data.Configurations;
 public class CompanyConfigurations : IEntityTypeConfiguration<Company>
 {
     public void Configure(EntityTypeBuilder<Company> builder)

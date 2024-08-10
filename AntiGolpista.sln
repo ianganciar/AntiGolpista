@@ -11,8 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntiGolpista.Application", "AntiGolpista.Application\AntiGolpista.Application.csproj", "{35878C70-0A84-4325-BF47-ADA3611C1640}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiGolpista.Blazor", "AntiGolpista.Blazor\AntiGolpista.Blazor.csproj", "{FAB9205E-BD1E-414C-A990-8FF86A51F7A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiGolpista.Blazor", "AntiGolpista.Blazor\AntiGolpista.Blazor.csproj", "{8E311080-9014-4C46-A237-7AFBEC52EF8D}"
 	ProjectSection(ProjectDependencies) = postProject
+		{35878C70-0A84-4325-BF47-ADA3611C1640} = {35878C70-0A84-4325-BF47-ADA3611C1640}
 		{663854CF-03F6-4A16-B6EF-04B1EB6B5B87} = {663854CF-03F6-4A16-B6EF-04B1EB6B5B87}
 		{6CB96593-3844-43C1-9146-8A23EA8B207D} = {6CB96593-3844-43C1-9146-8A23EA8B207D}
 	EndProjectSection
@@ -35,16 +36,16 @@ Global
 		{35878C70-0A84-4325-BF47-ADA3611C1640}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35878C70-0A84-4325-BF47-ADA3611C1640}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35878C70-0A84-4325-BF47-ADA3611C1640}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FAB9205E-BD1E-414C-A990-8FF86A51F7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FAB9205E-BD1E-414C-A990-8FF86A51F7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FAB9205E-BD1E-414C-A990-8FF86A51F7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FAB9205E-BD1E-414C-A990-8FF86A51F7A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E311080-9014-4C46-A237-7AFBEC52EF8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E311080-9014-4C46-A237-7AFBEC52EF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E311080-9014-4C46-A237-7AFBEC52EF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E311080-9014-4C46-A237-7AFBEC52EF8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FAB9205E-BD1E-414C-A990-8FF86A51F7A2} = {2F9A92C6-0E4E-45E1-8727-78BB5E395F0F}
+		{8E311080-9014-4C46-A237-7AFBEC52EF8D} = {2F9A92C6-0E4E-45E1-8727-78BB5E395F0F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F4D549C-85EF-484D-9702-5E80D49C1A8B}

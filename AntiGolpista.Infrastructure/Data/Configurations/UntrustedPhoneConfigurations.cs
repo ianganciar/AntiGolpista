@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AntiGolpista.Infrastructure.Persistence.Configurations;
+namespace AntiGolpista.Infrastructure.Data.Configurations;
 public class UntrustedPhoneConfigurations : IEntityTypeConfiguration<UntrustedPhoneNumber>
 {
     public void Configure(EntityTypeBuilder<UntrustedPhoneNumber> builder)
