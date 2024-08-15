@@ -19,6 +19,7 @@ public class Company : BaseEntity
 
     private Company()
     {
+        UserId = null!;
         Name = null!;
         SupportPhoneNumber = null!;
         Document = null!;
@@ -26,14 +27,8 @@ public class Company : BaseEntity
         ProfileImageUrl = null!;
         BannerImageUrl = null!;
     }
-    public Company(
-        Name name,
-        PhoneNumber supportPhoneNumber,
-        Document document,
-        Uri documentImageUrl,
-        Uri profileImageUrl,
-        Uri bannerImageUrl
-        )
+
+    public Company(Name name, PhoneNumber supportPhoneNumber, Document document, Uri documentImageUrl, Uri profileImageUrl, Uri bannerImageUrl, bool isVerified, string userId)
     {
         Name = name;
         SupportPhoneNumber = supportPhoneNumber;
@@ -41,6 +36,8 @@ public class Company : BaseEntity
         DocumentImageUrl = documentImageUrl;
         ProfileImageUrl = profileImageUrl;
         BannerImageUrl = bannerImageUrl;
+        IsVerified = isVerified;
+        UserId = userId;
     }
 
     public void UpdateName(Name newName)

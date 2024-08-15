@@ -10,9 +10,9 @@ public interface ICompanyRepository
     Task AddAsync(Company company);
     Task UpdateSupportPhoneNumberAsync(int id, PhoneNumber newSupportPhoneNumber);
     Task UpdateDocumentAsync(int id, Document newDocument);
-    Task UpdateDocumentImageUrlAsync(int id, Uri newDocumentPictureUrl);
-    Task UpdateProfileImageUrlAsync(int id, Uri newProfilePictureUrl);
-    Task UpdateBannerImageUrlAsync(int id, Uri newBannerPictureUrl);
+    Task UpdateDocumentImageUrlAsync(int id, Uri newDocumentImageUrl);
+    Task UpdateProfileImageUrlAsync(int id, Uri newProfileImageUrl);
+    Task UpdateBannerImageUrlAsync(int id, Uri newBannerImageUrl);
     Task UpdateIsVerifiedAsync(int id, bool isVerified);
     Task DeleteAsync(int id);
 }

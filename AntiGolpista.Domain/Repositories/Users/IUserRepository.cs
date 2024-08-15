@@ -1,16 +1,10 @@
 ﻿using AntiGolpista.Domain.Entities.Users;
 using AntiGolpista.Domain.ValueObjects;
+using Microsoft.AspNetCore.Identity;
 
 namespace AntiGolpista.Domain.Repositories.Users;
 public interface IUserRepository
 {
-    Task<ApplicationUser?> GetByIdAsync(int id);
-    Task<ApplicationUser?> GetByEmailAsync(Email email);
-    Task<ApplicationUser?> GetByPhoneNumber(PhoneNumber phoneNumber);
-    Task AddAsync(ApplicationUser user);
-    Task UpdateNameAsync(int userId, Name newName);
-    Task UpdateEmailAsync(int userId, Email newEmail);
-    Task UpdatePasswordAsync(int userId, string newPasswordHash);
-    Task UpdatePhoneNumberAsync(int userId, PhoneNumber newPhoneNumber);
+    Task UpdateName(int id, Name name);    
     Task DeleteAsync(int id);
 }
